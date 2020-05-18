@@ -13,7 +13,7 @@
   <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="resources/index.html">Latitude</a>
+            <a class="navbar-brand" href="index.html">Latitude</a>
             <!-- ref the homepage link here -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -43,49 +43,35 @@
           </nav>
     </header>
     <div class="container">
-    <!-- <div class="col-md-4 col-sm-12"> -->
-        <!-- need to center this to middle of page -->
-        <div class="jumbotron">
-            <h1 class="display-5">Comparison: Latitude vs. X </h1>
-            <hr>
-            <h6>Click any plot to get an in-depth analysis.</h6>
-            <div class="my-4">
-                <div class="row">
-                    <div class="col-md-6 col-sm-3 col-xs-3 mt-5"><a href="resources/max_temp.html"><p>vs. Max Temperature </p><img src="assets/temp_map.png" alt="Plot#1" width="400px"></div>   
-                    <div class="col-md-6 col-sm-3 col-xs-3 mt-5"><a href="resources/humidity.html"><p>vs. Humidity</p><img src="assets/humidity_map.png" alt="Plot#2" width="400px"></div>
-                    <div class="col-md-6 col-sm-3 col-xs-3 mt-5"><a href="resources/cloudiness.html"><p>vs. Cloudiness</p><img src="assets/cloudiness_map.png" alt="Plot#3" width="400px"></div>
-                    <div class="col-md-6 col-sm-3 col-xs-3 mt-5"><a href="resources/windspeed.html"><p>vs. Windspeed </p><img src="assets/windspeed_map.png" alt="Plot#4" width="400px"></div>
+    <div class = "row">
+        <div class= "col-md-8 col-sm-12">
+            <div class = "jumbotron">
+                <h1 class="display-5">Summary: Latitude vs. X</h1>
+                <hr class="my-4">
+                <p>
+                <img src="assets/temp_map.png" width="400px" alt="Project Description" style="float:left;margin:15px;" />
+                <div style="font-size:20px" >The purpose of this project is to create a script to visualize the weather of 500+ cities across the globe.
+                 In order to do so, I was instructed to utilize a Python library, the OpenWeatherMap API, and MatPlotLib to display my data. By comparing each city from one another, I was able to find
+                a significant change in Temperature, Humidity, Cloudiness, and Wind Speed based on the city's distace from the equator. This site shares the result of my project. Included are multiple visualizations based on my analysis. Thank You.
                 </div>
+                </p>
+            </div>
         </div>
-    </div>
-
-   
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
+        <div class="col-md-4 col-sm-12">
+            <div class="jumbotron">
+                <h1 class="display-5">Visualizations</h1>
+                <hr class="my-4">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-3 col-xs-3 mt-5"><a href="resources/max_temp.html"><img src="assets/temp_map.png" alt="Plot#1" width="100%"></div>
+                        <!-- create a space here? -->
+                        <div class="col-md-6 col-sm-3 col-xs-3 mt-5"><a href="resources/humidity.html"><img src="assets/humidity_map.png" alt="Plot#2" width="100%"></div>
+                        <div class="col-md-6 col-sm-3 col-xs-3 mt-5"><a href="resources/cloudiness.html"><img src="assets/cloudiness_map.png" alt="Plot#3" width="100%"></div>
+                        <div class="col-md-6 col-sm-3 col-xs-3 mt-5"><a href="resources/windspeed.html"><img src="assets/windspeed_map.png" alt="Plot#4" width="100%"></div>
+                    </div>
+            </div>
+        </div>
+      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
